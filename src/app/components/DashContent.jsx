@@ -65,7 +65,7 @@ const DashContent = () => {
         {/* slider */}
         <DashSlider/>
 
-        <div className='w-full flex gap-4 mt-[3%] lg:flex-col-reverse mx-auto'>
+        <div className='w-full flex gap-4 mt-[3%] lg:flex-col-reverse mx-auto bg-white'>
           {/* todo list */}
           <div className='w-[60%] text-sm lg:w-full '>
             <h1 className='uppercase lg:text-center'>to-do list</h1>
