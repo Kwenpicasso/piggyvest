@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Gifts = () => {
   return (
-    <div className='w-full flex gap-4  mt-[3%] lg:flex-col mx-auto'>
+    <div className='w-full flex gap-4  mt-[3%] lg:flex-col mx-auto bg-white'>
     {/* gifts list */}
     <div className='w-[60%] text-sm lg:w-full'>
     <div className='flex flex-col mt-2 gap-2 '>

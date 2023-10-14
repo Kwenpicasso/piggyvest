@@ -14,14 +14,14 @@ const SecuritySection = () => {
       {/* content */}
       <div className="space-y-3 lg:text-center">
         <h1 className="font-semibold text-darkblue text-2xl">Your security is our priority</h1>
-        <p className="font-light w-[60%] text-[15px] lg:w-full">PiggyVest uses the highest level of Internet 
+        <p className="font-light w-[60%] text-[15px] lg:w-full text-black">PiggyVest uses the highest level of Internet 
           Security and it is secured by 256 bits SSL security 
           encryption to ensure that your information is 
           comepletely protected from fraud.
         </p>
     <div className="flex items-center space-x-3 lg:justify-center">
     <div>
-      <PiArrowUDownRightFill size={25}/>
+      <PiArrowUDownRightFill size={25} className='text-black'/>
       </div>
       <p className="font-semibold text-darkblue">
       More on our security measures

@@ -7,7 +7,7 @@ const DiverseSection = () => {
     <section className="diverse">
         <div className="flex justify-center items-center flex-col gap-5">
           <h1 className="text-5xl font-bold text-darkblue  sm:text-3xl lg:text-center">Diverse ways to Invest</h1>
-          <p className="text-xl font-light sm:text-lg sm:w-[90%] lg:text-center">Grow your money and invest for your future confidently.</p>
+          <p className="text-xl font-light sm:text-lg sm:w-[90%] lg:text-center text-black">Grow your money and invest for your future confidently.</p>
         </div>
 
         <div  className="w-full max-w-[1250px] h-[550px] rounded-[30px] capitalize p-[5%] bg-[#7913e5] overflow-hidden  text-white">

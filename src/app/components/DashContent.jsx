@@ -35,8 +35,8 @@ const DashContent = () => {
         <div className='w-full  flex justify-between items-center  '>
           {/* name display */}
           <div className='flex flex-col'>
-            <h1 className='font-bold text-3xl lg:text-xl sm:text-md'>Hi,</h1>
-            <p className='text-md sm:text-xs '>{greeting}</p>
+            <h1 className='font-bold text-3xl lg:text-xl sm:text-md text-black'>Hi,</h1>
+            <p className='text-md sm:text-xs text-black '>{greeting}</p>
 
           </div>
 
@@ -50,7 +50,7 @@ const DashContent = () => {
         <div className='w-full flex justify-between items-center mt-4 lg:w-full'>
           {/* sync icon */}
           <div className=''>
-           <FaSyncAlt/>
+           <FaSyncAlt className='text-black'/>
 
           </div>
 

@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="">
               <h1 className="text-darkblue font-bold">products</h1>
             </div>
-            <div className="font-light flex flex-col gap-2 text-xs">
+            <div className="font-light flex flex-col gap-2 text-xs text-black">
               <p>piggybank</p>
               <p>invest</p>
               <p>safelock</p>
