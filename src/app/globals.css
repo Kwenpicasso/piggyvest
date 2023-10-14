@@ -2,26 +2,294 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: #F2F7F8;
+   
+  }
+
+  @layer base {
+    .form{
+      @apply w-[35%]  sm:w-[90%] lg:w-[60%] sm:h-[620px] h-[800px] bg-white mx-auto border rounded-tl-[20px] rounded-br-[20px] rounded-r-[20px] p-[40px] space-y-5
+    }
+    .loginform{
+      @apply w-[35%] sm:w-[80%] lg:w-[60%]  h-[500px] bg-white mx-auto border rounded-tl-[20px] rounded-br-[20px] rounded-r-[20px] p-[40px] space-y-5
+    }
+    .diverse{
+      @apply w-full h-[100vh] bg-white px-[7%] max-w-[1550px] mx-auto flex flex-col gap-10 justify-center items-center py-[4%] sm:pt-[80px]
+    }
+  }
+
+ 
+  @layer components {
+    .inputcont{
+      @apply flex flex-col gap-2 text-sm font-semibold text-[#4a5568]
+    }
+    .innerinput{
+      @apply pl-4 outline-none w-full py-[15px] bg-[#edf2f7] border rounded-[10px]
+    }
+    .loginbtn{
+      @apply w-full text-white text-sm font-semibold py-[15px] bg-[#0d60d8] border rounded-tl-[10px] rounded-br-[10px] rounded-r-[10px] hover:bg-bblue
+    }
+  }
+ 
+  .btn {
+    color: #fff!important;
+    text-align: center;
+    white-space: nowrap;
+    padding: 16px 22px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: #0c1825!important;
+    border: 1px solid #0c1825;
+  }
+  .btnn{
+    color: #fff!important;
+    text-align: center;
+    white-space: nowrap;
+    padding: 15px 22px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #122231;
+  }
+  .htn{
+    color: #fff!important;
+    text-align: center;
+    white-space: nowrap;
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #122231;
+  }
+  .htn:hover{
+   background: black;
+  }
+  .ctn {
+    width: 100%;
+    color: #fff!important;
+    text-align: center;
+    padding: 15px 22px;
+    border-radius: 12px;
+    color: #0c1825!important;
+    border: 1px solid #0c1825;
+  }
+ 
+  .ctnn{
+    width: 100%;
+    color: #fff!important;
+    text-align: center;
+    white-space: nowrap;
+    padding: 15px 22px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #122231;
+  }
+  .linetop, .linebottom {
+    height: 2px;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    transition: all 0.3s;
+    background: black;
+    transform: rotate(0deg);
+    transition: all 0.4s ;
+  }
+ 
+  .hamboxOpen {
+    background: none;
+  }
+  .hambox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 auto;
+     
+    
+  }
+  .linetop {
+    top: 1.1em;
+  }
+  .nav-overlay{
+    position: fixed;
+    background: #F2F7F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    top: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3,1);
+   
+  }
+  
+  .menu-toggle{
+    z-index: 100;
+
+    cursor: pointer;
+   }
+   .linetop.spin{
+    top: 0.9em;
+    transform: rotate(50deg);
+    background: black;
+  }
+  .linebottom.spin{
+    top: 0.9em;
+    transform: rotate(-47deg);
+    height: 2px;
+    background: black;
+  }
+  .cover{
+    animation: move 3s infinite ease alternate;
+  }
+  @keyframes move {
+    from{
+      transform: translateY(-20px);
+    }
+    to{
+      transform: translateY(5px);
+    }
+  }
+ .hhh{
+  transition: right 1s ease;
+ }
+  .hh:hover .hhh{
+    right: 10px;
+    
+    
+    
+  }
+  .hh:hover:nth-child(2){
+    background-color: rgb(0, 51, 153);
+    color: white;
+  }
+  .hh:hover:nth-child(3){
+    background-color: #2295f2;
+    color: white;
+  }
+  .hh:hover:nth-child(4){
+    background-color: #39c277;
+    color: white;
+  }
+  .hh:hover:nth-child(5){
+    background-color: #e5489b;
+    color: white;
+  }
+  .hh:hover:nth-child(6){
+    background-color: #0c1825;
+    color: white;
+  }
+  .darkblue{
+    color: #0c1825;
+    
+  }
+  .navyblue{
+    color: rgb(0, 51, 153);
+    
+  }
+  .skyblue{
+    color: #2295f2;
+
+  }
+
+  
+  .green{
+    color: #39c277;
+    
+  }
+  .pink{
+    color: #e5489b;
+    
+  }
+ 
+ 
+  .hh:hover .h {
+    color: white;
+  }
+  .con img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+.lightblue{
+  background-color: rgb(13, 96, 216);
+}
+.purple{
+  background-color: rgb(121, 19, 229);
+}
+.black{
+  background-color: rgb(34, 34, 34);
+}
+.white{
+  background-color: rgb(255, 255, 255);
+}
+.darkpurple{
+  background-color: rgb(117, 63, 246);
+}
+.whitepop{
+  color: rgb(231, 67, 156);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.movie{
+  border: 10px solid #fff;
+  min-height: 465px;
+  margin-bottom: 2rem;
 }
+.ktn{
+  color: black!important;
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px 18px;
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  background:  transparent;
+}
+
+
+.navbar-scroll {
+  background-color: #fff; /* Change to your desired background color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Additional styles for the fixed navbar when scrolling */
+}
+.login{
+  background-image: url("/Ellipse.png"),url("/Subtract.png"),url("/Polygon.png");
+  background-position: left -1% top 50%, right -7.5% top -1%, right -5% bottom -5%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 15%, 15%, 15%;
+  
+  
+}
+.news {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* gxEbsj8Tj7Az96Ux
+
+
+rsB42PZZ8YUOHPs1 */
