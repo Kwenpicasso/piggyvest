@@ -30,7 +30,7 @@ const DashContent = () => {
   }, []);
   
   return (
-    <div className='w-full h-screen lg:w-full '>
+    <div className='w-full h-screen lg:w-full bg-white'>
       <div className='w-full px-[2%] py-[5%] h-full lg:w-full '>
         <div className='w-full  flex justify-between items-center  '>
           {/* name display */}
@@ -74,7 +74,7 @@ const DashContent = () => {
           </div>
            
            {/* subscribed newsletter */}
-           <div className='w-[40%] text-sm  lg:w-full'>
+           <div className='w-[40%] text-sm  lg:w-full bg-white'>
             <div className='w-full flex gap-2 flex-col justify-center lg:items-center'>
               <h1>Watch Our Dare To Dream Video</h1>
             <Link href='https://www.youtube.com/watch?si=u6E-q52JFIHHQojY&v=tL_yzHMRtGQ&feature=youtu.be'>
