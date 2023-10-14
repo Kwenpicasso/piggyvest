@@ -158,11 +158,7 @@ export const todo = [
         title: 'Safelock ₦50,001 for 61 - 90 days'
 
     },
-    {
-        id: 5,
-        title: 'Set your security question now! 🔐 🔐'
-
-    },
+  
 ]
 export const gifts = [
     {
