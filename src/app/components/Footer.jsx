@@ -53,7 +53,7 @@ const Footer = () => {
             <div>
               <h1 className="text-darkblue font-bold">company</h1>
             </div>
-            <div className="font-light flex flex-col gap-2 text-xs">
+            <div className="font-light flex flex-col gap-2 text-xs text-black">
               <p>about</p>
               <p>FAQs</p>
               <p>Blog</p>
@@ -65,7 +65,7 @@ const Footer = () => {
             <div>
               <h1 className="text-darkblue font-bold">Legal</h1>
             </div>
-            <div className="font-light flex flex-col gap-2 text-xs">
+            <div className="font-light flex flex-col gap-2 text-xs text-black">
               <p>terms</p>
               <p>privacy</p>
               <p>security</p>
@@ -87,7 +87,7 @@ const Footer = () => {
               <BiLogoTiktok size={20}/>
               <AiFillYoutube size={20}/>
             </div>
-            <div className="font-light flex flex-col items-end w-full justify-end gap-3 lg:items-end lg:justify-end">
+            <div className="font-light flex flex-col items-end w-full justify-end gap-3 lg:items-end lg:justify-end text-black">
               <p className="capitalize w-[70%] lg:w-full">Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria.</p>
               <p className="lg:w-full">contact@piggyvest.com</p>
               <p className="lg:w-full">+234 700 933 933 933</p>
@@ -104,8 +104,8 @@ const Footer = () => {
 
         {/* botttom footer section */}
         <div className="w-full text-xs text-[rgba(61,79,96,.6509803922)] space-y-3 border border-t-[hsla(0,0%,74.1%,.5215686275)] border-x-transparent border-b-transparent pt-[30px] pb-[100px]">
-         <p className="w-[60%] mb-[30px] lg:w-full">Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 7 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
-         <div className="flex flex-col gap-2">
+         <p className="w-[60%] mb-[30px] lg:w-full text-black">Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 7 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
+         <div className="flex flex-col gap-2 text-black">
           <p>PV Capital Limited is a fund manager duly licensed by the Securities and Exchange</p>
           <p>Commission (SEC) of Nigeria</p>
          </div>
