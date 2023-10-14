@@ -4,7 +4,7 @@ import { todo } from '../Data'
 
 const TodoList = () => {
   return (
-    <div className='flex flex-col mt-2 gap-2 '>
+    <div className='flex flex-col mt-2 gap-2 bg-white'>
     {/* list itself */}
    {todo.map((list) => (
      <div key={list.id} className='w-full flex justify-start font-semibold text-dash items-center gap-4 border border-gray-400 p-4  rounded-tl-[10px] rounded-br-[10px] rounded-r-[10px]'>
