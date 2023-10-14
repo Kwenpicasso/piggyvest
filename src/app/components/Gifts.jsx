@@ -7,7 +7,7 @@ const Gifts = () => {
   return (
     <div className='w-full flex gap-4  mt-[3%] lg:flex-col mx-auto bg-white'>
     {/* gifts list */}
-    <div className='w-[60%] text-sm lg:w-full'>
+    <div className='w-[60%] text-sm lg:w-full bg-white'>
     <div className='flex flex-col mt-2 gap-2 '>
     {/* list itself */}
    {gifts.map((list) => (
@@ -30,7 +30,7 @@ const Gifts = () => {
     </div>
      
      {/* meetinvestor */}
-     <div className='w-[40%] text-sm  lg:w-full'>
+     <div className='w-[40%] text-sm  lg:w-full bg-white'>
       <div className='w-[100%] flex flex-col justify-center items-center '>
       <h1>#MeetAPiggyVestSaver: Muyiwa</h1>
       <Image src='/man.jpeg' width={400} height={200} className='rounded-lg' alt='man'/>
