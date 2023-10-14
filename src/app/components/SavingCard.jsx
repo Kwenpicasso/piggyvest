@@ -19,7 +19,7 @@ const SavingCard = () => {
         <div className="flex flex-col justify-between h-full">
           <div className="space-y-7 lg:text-center lg:pt-5">
          <h1 className={`text-4xl font-bold lg:text-3xl h ${item.edit}` }>{item.title}</h1>
-           <p className="text-base w-[70%] font-light  lg:w-[80%] lg:mx-auto  lg:text-sm text-black">{item.desc}</p>
+           <p className="text-base w-[70%] font-light  lg:w-[80%] lg:mx-auto  lg:text-sm">{item.desc}</p>
          </div>
           <div className={`flex items-center space-x-3 h ${item.edit}`}>
 
